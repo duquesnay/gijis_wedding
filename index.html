@@ -27,12 +27,15 @@
             <!-- Section du pitch -->
             <section class="pitch text-center mb-5">
                 <p class="lead">We've got the love, now we need the adventure!</p>
-                <p>Your kind gift will send us wander to new horizons, discover new landscapes, new secret beaches, never tasted before cocktails.</p>
+                <p>We've got the love, now we need the adventure!
+                    Your gift will send us to new horizons, hidden beaches, and uncharted cocktails.
+                </p>
             </section>
 
             <!-- Lien -->
             <div class="text-center mb-5">
-                <a href="https://wise.com/pay/me/guillaumed113" class="btn btn-primary btn-lg">Contribute to our adventure</a>
+                <a href="https://wise.com/pay/me/guillaumed113" class="btn btn-primary btn-lg">Contribute to our
+                    adventure</a>
             </div>
 
             <!-- QR Code -->
@@ -42,7 +45,7 @@
                         <img src="qrcode.png" alt="QR Code pour Wise" class="img-fluid mb-3">
                         <p class="card-text">Scan this QR code to contribute</p>
                         <p class="text-muted small">https://wise.com/pay/me/guillaumed113</p>
-                        <p class="text-muted small fst-italic">P.S.: we don't accept cryptocurrencies</p>
+                        <p class="text-muted small fst-italic">P.S. We don’t take cryptocurrencies (yet)!</p>
                     </div>
                 </div>
             </div>
@@ -62,12 +65,12 @@
 
 <!-- Simple parallax enhancement for mobile -->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         // Simple parallax effect even when fixed background is disabled on mobile
         const banner = document.querySelector('.banner-image');
 
         if (window.innerWidth <= 768) {
-            window.addEventListener('scroll', function() {
+            window.addEventListener('scroll', function () {
                 const scrollPosition = window.scrollY;
                 if (scrollPosition < 500) {
                     banner.style.backgroundPositionY = 40 + (scrollPosition * 0.05) + '%';
