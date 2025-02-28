@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Our Wedding Registry</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Bannière avec image -->
+<header class="banner-image mb-4">
+    <div class="banner-overlay">
+        <div class="container">
+            <h1 class="text-center text-white">Our Wedding Registry</h1>
+        </div>
+    </div>
+</header>
+
+<!-- Contenu principal -->
+<main class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Section du pitch -->
+            <section class="pitch text-center mb-5">
+                <p class="lead">We've got the love, now we need the adventure!</p>
+                <p>Your kind gift will send us wander to new horizons, discover new landscapes, new secret beaches, never tasted before cocktails.</p>
+            </section>
+
+            <!-- Lien -->
+            <div class="text-center mb-5">
+                <a href="https://wise.com/pay/me/guillaumed113" class="btn btn-primary btn-lg">Contribute to our adventure</a>
+            </div>
+
+            <!-- QR Code -->
+            <div class="qr-code-container text-center mb-5">
+                <div class="card mx-auto" style="max-width: 300px;">
+                    <div class="card-body">
+                        <img src="qrcode.png" alt="QR Code pour Wise" class="img-fluid mb-3">
+                        <p class="card-text">Scan this QR code to contribute</p>
+                        <p class="text-muted small">https://wise.com/pay/me/guillaumed113</p>
+                        <p class="text-muted small fst-italic">P.S.: we don't accept cryptocurrencies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-light py-3 mt-5">
+    <div class="container">
+        <p class="text-center text-muted mb-0">&copy; 2025 - Thank you for your contribution!</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+<!-- Simple parallax enhancement for mobile -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Simple parallax effect even when fixed background is disabled on mobile
+        const banner = document.querySelector('.banner-image');
+
+        if (window.innerWidth <= 768) {
+            window.addEventListener('scroll', function() {
+                const scrollPosition = window.scrollY;
+                if (scrollPosition < 500) {
+                    banner.style.backgroundPositionY = 40 + (scrollPosition * 0.05) + '%';
+                }
+            });
+        }
+    });
+</script>
+</body>
+</html>
