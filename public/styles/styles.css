@@ -21,7 +21,7 @@ body {
 /* Personnalisation de la bannière avec image et parallaxe */
 .banner-image {
     position: relative;
-    background-image: url('banner.jpeg');
+    background-image: url('../assets/banner.jpeg');
     background-size: cover;
     background-position: center 40%;
     background-attachment: fixed; /* Effet de parallaxe */
